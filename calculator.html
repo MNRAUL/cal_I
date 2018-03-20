@@ -1,0 +1,26 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>Calculator</title><meta charset="utf-8">
+<script type="text/javascript">
+
+	function inverse(){
+		var num = document.getElementById("n1");
+		num.value = 1 / num.value;
+	}
+
+	function square(){
+		var num = document.getElementById("n1");
+		num.value = num.value * num.value;
+	}
+</script>
+</head>
+<body>
+	Number:
+	<input type="text" id="n1" onclick="empty()"><p>
+	
+	<button onclick="inverse()"> 1/x </button>
+	<button onclick="square()"> 1<sup>x </button>
+</body>
+</html>
+
